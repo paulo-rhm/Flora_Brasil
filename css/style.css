@@ -7,7 +7,6 @@
   /* cores */
   --first-color: #01b74d;
   --second-color: #e7d7a1;
-  /* --orange-color: #ff5900; */
   --white-color: #fef8f0;
   --black-color: #132f3a;
 
@@ -16,41 +15,36 @@
   --font-logo: "Italiana", serif;
   --big-font-size: 3rem;
   --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
+  --h2-font-size: 2rem;
+  /* --h3-font-size: 1rem; */
+  --normal-font-size: 1.3rem;
+  /* --small-font-size: 0.813rem; */
 
   /* font weight  */
-  --font-light: 300;
+  /* --font-light: 300; */
   --font-medium: 400;
   --font-bold: 700;
 
   /* margins */
-  --m-1: 0.5rem;
-  --m-2: 1rem;
-  --m-3: 1.5rem;
-  --m-4: 2rem;
+  /* --m-1: 0.5rem; */
+  /* --m-2: 1rem; */
+  /* --m-3: 1.5rem; */
+  /* --m-4: 2rem; */
   --m-5: 2.5rem;
-  --m-6: 3rem;
+  /* --m-6: 3rem; */
 
   /* z indexs */
   --z-fixed: 100;
-  --z-tooltip: 10;
+  /* --z-tooltip: 10; */
 }
 
 /* base */
-*,
-*::after,
-*::before {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-}
-
-* {
   scroll-behavior: smooth;
 }
 
@@ -131,7 +125,7 @@ a:hover {
 
 .checkbtn {
   font-size: var(--big-font-size);
-  color: var(--black-color);
+  color: var(--second-color);
   float: right;
   line-height: 8rem;
   margin-right: 4rem;
@@ -153,19 +147,17 @@ a:hover {
   width: 10vw;
   height: 88vh;
   border: solid 1px var(--second-color);
-  /* margin: -19.7rem 1rem; */
   left: 1rem;
-  /* background: #040404; */
 }
 
 .up {
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   position:   absolute;
   border: 2px solid #e7d7a1;
   border-radius: 50%;
-  top: 85%;
-  left: 23%;
+  top: 90%;
+  left: 30%;
   display: flex;
   opacity: .8;
 }
@@ -173,7 +165,7 @@ a:hover {
 .left a {
   position: relative;
   color: var(--black-color);
-  font-size: var(--big-font-size);
+  font-size: 1.5rem;
   font-family: var(--font-geral);
   margin: auto;  
 }
@@ -184,28 +176,30 @@ a:hover {
   height: 88vh;
   border: solid 1px var(--second-color);
 
-  /* margin: -19.7rem 1rem; */
   right: 1rem;
-  /* background: red; */
 }
 
 .info {
+  font-family: var(--font-geral);
   margin-bottom: 7rem;
   width: 100%;
   margin: 0 auto;
   border: solid 1px var(--second-color);
-  /* background: #000; */
+}
+
+.info h1 {
+  font-family: var(--font-logo);
+  font-weight: var(--font-bold);
+  font-size: var(--h2-font-size);
+  letter-spacing: .2rem;
 }
 
 .flores-brasil {
   display: flex;
   flex-wrap: wrap;
   width: 75vw;
-  /* height: 100vh; */
-  /* border: solid 1px var(--second-color); */
   position: relative;
   margin: 5rem auto;
-  /* background: #000; */
 } 
 
 .flores-brasil p {
@@ -214,7 +208,7 @@ a:hover {
   margin: 3rem;
 }
 
-.flores-brasil h2 {
+.flores-brasil h1 {
   margin: 1rem auto;
   display: flex;
   justify-content: center;
@@ -236,7 +230,6 @@ a:hover {
   border: solid 1px var(--second-color);
   position: relative;
   margin: .5rem auto;
-  /* background: var(--first-color); */
 }
 
 .img {
@@ -257,9 +250,9 @@ a:hover {
 }
 
 .text li {
+  font-family: var(--font-geral);
     margin: .3rem;
     line-height: 1rem;
-
 }
 
 .flora {
@@ -280,38 +273,9 @@ a:hover {
   height: 8vh;
   border: solid 1px var(--second-color);
   margin: 1rem auto;
-  /* background: #000; */
 } 
 
 /* medias */
-
-/* @media (max-width:1024px) {
-
-    .right {
-        display: none;
-        visibility: hidden;
-
-    } 
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .cards {
-        max-width: 100%;
-        height: 700vh;
-        background: #ff5900;
-    }
-
-     footer {
-        position: relative;
-        bottom: 0;
-    } 
-
-} */
 
 /* desktop */
 @media screen and (max-width: 1024px) {
@@ -508,11 +472,11 @@ a:hover {
   }
 
   .img-logo {
-    margin: 0 .5rem;
+    margin: 0 .1rem;
   }
 
   .logo {
-    margin: 0 0 0 6rem;
+    margin: 0 0 0 4.5rem;
     padding: 1rem;
   }
 
@@ -530,8 +494,13 @@ a:hover {
   .info {
     position: relative;
     width: 140vw;
-    height: 25rem;
+    height: 28rem;
     left: -4.4rem;
+  }
+
+  .info h1 {
+    font-size: var(--normal-font-size);
+    letter-spacing: .1rem;
   }
 
   .info p {
@@ -559,6 +528,10 @@ a:hover {
     height: 60vh;
     margin: 0 0 -5rem 0;
     padding: 1rem;
+  }
+
+  .text ul {
+    width: 55vw;
   }
 
   .text ul li {
