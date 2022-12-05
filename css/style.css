@@ -140,17 +140,17 @@ a:hover {
 
 .laterais {
   position: relative;
-  top: -15rem;
+  top: -17rem;
 }
 .left {
   position: fixed;
   width: 10vw;
   height: 88vh;
-  border: solid 1px var(--second-color);
+  /* border: solid 1px var(--second-color); */
   left: 1rem;
 }
 
-.up {
+/* .up {
   width: 3.5rem;
   height: 3.5rem;
   position:   absolute;
@@ -160,7 +160,7 @@ a:hover {
   left: 30%;
   display: flex;
   opacity: .8;
-}
+} */
 
 .left a {
   position: relative;
@@ -174,7 +174,7 @@ a:hover {
   position: fixed;
   width: 10vw;
   height: 88vh;
-  border: solid 1px var(--second-color);
+  /* border: solid 1px var(--second-color); */
 
   right: 1rem;
 }
@@ -183,7 +183,7 @@ a:hover {
   font-family: var(--font-geral);
   margin-bottom: 7rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
   border: solid 1px var(--second-color);
 }
 
@@ -234,6 +234,10 @@ a:hover {
 
 .img {
   width: 77rem;
+}
+
+.text h3 {
+  text-align: center;
 }
 
 .text {
