@@ -277,8 +277,8 @@ a:hover {
   height: 8vh;
   border: solid 1px var(--second-color);
   margin: 1rem auto;
+  background: var(--first-color);
 } 
-
 /* medias */
 
 /* desktop */
@@ -445,7 +445,7 @@ a:hover {
 
   ul {
     position: fixed;
-    width: 50vw;
+    width: 70vw;
     height: 100vh;
     background: var(--first-color);
     top: 64px;
